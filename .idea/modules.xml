@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/portrait-analyze-service/portrait-analyze-service.iml" filepath="$PROJECT_DIR$/portrait-analyze-service/portrait-analyze-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portrait-common/portrait-common.iml" filepath="$PROJECT_DIR$/portrait-common/portrait-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portrait-info-service/portrait-info-service.iml" filepath="$PROJECT_DIR$/portrait-info-service/portrait-info-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portrait-register-center/portrait-register-center.iml" filepath="$PROJECT_DIR$/portrait-register-center/portrait-register-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-portrait-parent.iml" filepath="$PROJECT_DIR$/user-portrait-parent.iml" />
+    </modules>
+  </component>
+</project>

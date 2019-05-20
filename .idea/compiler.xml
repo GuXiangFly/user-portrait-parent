@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="portrait-analyze-service" />
+        <module name="portrait-common" />
+        <module name="portrait-info-service" />
+        <module name="portrait-register-center" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="portrait-analyze-service" target="1.8" />
+      <module name="portrait-common" target="1.5" />
+      <module name="portrait-info-service" target="1.8" />
+      <module name="portrait-register-center" target="1.8" />
+      <module name="user-portrait-parent" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="portrait-analyze-service" options="-Xlint:all -Xpkginfo:always" />
+      <module name="portrait-info-service" options="-parameters" />
+      <module name="portrait-register-center" options="-parameters" />
+    </option>
+  </component>
+</project>
