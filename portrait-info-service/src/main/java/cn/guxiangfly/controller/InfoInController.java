@@ -79,5 +79,4 @@ public class InfoInController {
         String result = JSONObject.toJSONString(resultMessage);
         return result;
     }
-
 }

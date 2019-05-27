@@ -51,6 +51,7 @@ public class BrandLikeMap implements FlatMapFunction<KafkaEvent, BrandLike> {
         collector.collect(brandLike);
         brandLike.setGroupbyfield("==brandlik=="+maxbrand);
         colum = "brandlike";
+
         HbaseUtils.putdata(tablename,rowkey,famliyname,colum,maxbrand);
     }
 }
