@@ -1,12 +1,11 @@
 package cn.guxiangfly.task;
 
 import cn.guxiangfly.entity.SexPreInfo;
+import cn.guxiangfly.map.SexPreMap;
 import cn.guxiangfly.reduce.SexpreReduce;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
-import org.apache.flink.api.java.utils.ParameterTool;
-import org.bson.Document;
 
 import java.util.*;
 

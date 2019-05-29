@@ -1,14 +1,16 @@
 package cn.guxiangfly.task;
 
 import cn.guxiangfly.entity.UserGroupInfo;
+import cn.guxiangfly.kmeans.Point;
+import cn.guxiangfly.map.UserGroupMap;
+import cn.guxiangfly.map.UserGroupMapbyreduce;
+import cn.guxiangfly.reduce.UserGroupInfoReduce;
+import cn.guxiangfly.reduce.UserGroupbykmeansReduce;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.utils.ParameterTool;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
 public class UserGroupTask {
     public static void main(String[] args) {
         final ParameterTool params = ParameterTool.fromArgs(args);
