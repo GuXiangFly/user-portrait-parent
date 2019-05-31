@@ -2,6 +2,7 @@ package cn.guxiangfly.task;
 
 import cn.guxiangfly.entity.ConsumptionLevel;
 import cn.guxiangfly.map.CounsumptionLevelMap;
+import cn.guxiangfly.reduce.ConsumptionLeaveFinalReduce;
 import cn.guxiangfly.reduce.ConsumptionLevelReduce;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;

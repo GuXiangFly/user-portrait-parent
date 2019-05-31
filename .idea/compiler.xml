@@ -11,6 +11,7 @@
         <module name="portrait-common" />
         <module name="portrait-info-service" />
         <module name="portrait-register-center" />
+        <module name="user-portrait-search-info" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="portrait-info-service" target="1.8" />
       <module name="portrait-register-center" target="1.8" />
       <module name="user-portrait-parent" target="1.5" />
+      <module name="user-portrait-search-info" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,6 +28,7 @@
       <module name="portrait-analyze-service" options="-Xlint:all -Xpkginfo:always" />
       <module name="portrait-info-service" options="-parameters" />
       <module name="portrait-register-center" options="-parameters" />
+      <module name="user-portrait-search-info" options="-parameters" />
     </option>
   </component>
 </project>

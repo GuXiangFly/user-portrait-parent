@@ -14,6 +14,7 @@
         <module>portrait-register-center</module>
         <module>portrait-info-service</module>
         <module>portrait-common</module>
+        <module>user-portrait-search-info</module>
     </modules>
 
 
