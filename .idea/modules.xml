@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/portrait-common/portrait-common.iml" filepath="$PROJECT_DIR$/portrait-common/portrait-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/portrait-info-service/portrait-info-service.iml" filepath="$PROJECT_DIR$/portrait-info-service/portrait-info-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/portrait-register-center/portrait-register-center.iml" filepath="$PROJECT_DIR$/portrait-register-center/portrait-register-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portrait-view-service/portrait-view-service.iml" filepath="$PROJECT_DIR$/portrait-view-service/portrait-view-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-portrait-parent.iml" filepath="$PROJECT_DIR$/user-portrait-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-portrait-search-info/user-portrait-search-info.iml" filepath="$PROJECT_DIR$/user-portrait-search-info/user-portrait-search-info.iml" />
     </modules>

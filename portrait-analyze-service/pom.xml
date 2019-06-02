@@ -29,6 +29,7 @@
             <artifactId>hbase-client</artifactId>
             <version>1.2.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.hbase/hbase-server -->
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-server</artifactId>
@@ -45,9 +46,9 @@
             <version>1.2.47</version>
         </dependency>
         <dependency>
-            <groupId>com.youfan.test</groupId>
-            <artifactId>youfancommon</artifactId>
-            <version>1.0</version>
+            <groupId>cn.guxiangfly</groupId>
+            <artifactId>portrait-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -83,4 +84,21 @@
         </dependency>
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <!-- Maven 自带的中央仓库使用的Id为central 如果其他的仓库声明也是用该Id
+            就会覆盖中央仓库的配置 -->
+            <id>mvnrepository</id>
+            <name>mvnrepository</name>
+            <url>http://www.mvnrepository.com/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
