@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by li on 2019/1/19.
  */
-@FeignClient(value = "youfanSearchInfo")
+@FeignClient(value = "user-portrait-search-info")
 public interface MongoDataService {
 
     @RequestMapping(value = "yearBase/searchYearBase",method = RequestMethod.POST)

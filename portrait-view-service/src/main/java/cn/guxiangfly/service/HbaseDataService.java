@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * @author guxiang
  */
-@FeignClient(value = "youfanSearchInfo")
+@FeignClient(value = "user-portrait-search-info")
 public interface HbaseDataService {
 
     @RequestMapping(value = "hbaseData/baiJiaZhiShuInfo",method = RequestMethod.POST)
