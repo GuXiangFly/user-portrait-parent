@@ -22,9 +22,8 @@ public class IdfMap implements MapFunction<String, TfIdfEntity> {
         TfIdfEntity tfIdfEntity = new TfIdfEntity();
         tfIdfEntity.setDocumentid(docuemtnid);
         tfIdfEntity.setDatamap(tfmap);
-
         //计算总数
-        long sum = 0l;
+        long sum = 0L;
         Collection<Long> longset = tfmap.values();
         for(Long templong:longset){
                 sum += templong;

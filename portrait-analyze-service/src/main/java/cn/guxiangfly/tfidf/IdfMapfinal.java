@@ -9,27 +9,29 @@ import java.util.*;
 public class IdfMapfinal implements MapFunction<TfIdfEntity, TfIdfEntity> {
 
     private long totaldoucments = 0l;
+    /**
+     * 只统计出现频率高于三次的
+     */
     private long words;
     public IdfMapfinal(long totaldoucments,long words){
         this.totaldoucments = totaldoucments;
         this.words =words;
-
-    }    @Override
+    }
+    @Override
     public TfIdfEntity map(TfIdfEntity tfIdfEntity) throws Exception {
         Map<String,Double> tfidfmap = new HashMap<String,Double>();
         String documentid = tfIdfEntity.getDocumentid();
         Map<String,Double> tfmap = tfIdfEntity.getTfmap();
         Set<Map.Entry<String,Double>> set = tfmap.entrySet();
         String tablename = "tfidfdata";
-        String rowkey="word";
         String famliyname="baseinfo";
         String colum="idfcount";
         for(Map.Entry<String,Double> entry:set){
             String word = entry.getKey();
             Double value = entry.getValue();
+            String rowKey = word;
 
-
-            String data = HbaseUtils.getdata(tablename,rowkey,famliyname,colum);
+            String data = HbaseUtils.getdata(tablename,rowKey,famliyname,colum);
             long viewcount = Long.valueOf(data);
             Double idf = Math.log(totaldoucments/viewcount+1);
             Double tfidf = value*idf;
